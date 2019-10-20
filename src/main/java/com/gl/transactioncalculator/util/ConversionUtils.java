@@ -52,8 +52,8 @@ public class ConversionUtils {
      * @param from                convert from currency
      * @param to                  convert to currency
      * @param n                   recursive depth index
-     * @param size                size of shortest chain of conversions
-     * @return shortest chain of conversions
+     * @param size                size of shortest chain of required conversions
+     * @return shortest chain of required conversions
      */
     private static List<ConversionInputDTO> deepSearch(final Set<ConversionInputDTO> conversionInputDTOS,
                                                        final CurrencyEnum from, final CurrencyEnum to, int n, int size) {
