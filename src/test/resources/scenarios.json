@@ -1,0 +1,165 @@
+[
+  {
+    "input": {
+      "conversionInputDTOS": [
+        {
+          "from": "USD",
+          "to": "CAD",
+          "rate": 1.2
+        }
+      ],
+      "from": "USD",
+      "to": "USD",
+      "amount": 3
+    },
+    "expected": {
+      "value": 3.00,
+      "currency": "USD"
+    }
+  },
+  {
+    "input": {
+      "conversionInputDTOS": [
+        {
+          "from": "USD",
+          "to": "UAH",
+          "rate": 1.2
+        }
+      ],
+      "from": "USD",
+      "to": "CAD",
+      "amount": 3
+    },
+    "expected": {
+      "value": 3.00,
+      "currency": "USD"
+    }
+  },
+  {
+    "input": {
+      "conversionInputDTOS": [
+        {
+          "from": "USD",
+          "to": "CAD",
+          "rate": 1.2
+        }
+      ],
+      "from": "USD",
+      "to": "CAD",
+      "amount": 3.00
+    },
+    "expected": {
+      "value": 3.60,
+      "currency": "CAD"
+    }
+  },
+  {
+    "input": {
+      "conversionInputDTOS": [
+        {
+          "from": "USD",
+          "to": "CAD",
+          "rate": 1.2
+        },
+        {
+          "from": "CAD",
+          "to": "USD",
+          "rate": 2.4
+        },
+        {
+          "from": "USD",
+          "to": "UAH",
+          "rate": 2.6
+        }
+      ],
+      "from": "USD",
+      "to": "CAD",
+      "amount": 3.00
+    },
+    "expected": {
+      "value": 3.60,
+      "currency": "CAD"
+    }
+  },
+  {
+    "input": {
+      "conversionInputDTOS": [
+        {
+          "from": "USD",
+          "to": "CAD",
+          "rate": 1.2
+        },
+        {
+          "from": "CAD",
+          "to": "USD",
+          "rate": 2.4
+        },
+        {
+          "from": "CAD",
+          "to": "UAH",
+          "rate": 4.1
+        },
+        {
+          "from": "AED",
+          "to": "CAD",
+          "rate": 2.7
+        }
+      ],
+      "from": "USD",
+      "to": "AED",
+      "amount": 3
+    },
+    "expected": {
+      "value": 9.72,
+      "currency": "AED"
+    }
+  },
+  {
+    "input": {
+      "conversionInputDTOS": [
+        {
+          "from": "USD",
+          "to": "CAD",
+          "rate": 1.2
+        },
+        {
+          "from": "USD",
+          "to": "UAH",
+          "rate": 1.2
+        },
+        {
+          "from": "AMD",
+          "to": "UAH",
+          "rate": 1.2
+        },
+        {
+          "from": "AED",
+          "to": "UAH",
+          "rate": 1.2
+        },
+        {
+          "from": "CAD",
+          "to": "USD",
+          "rate": 2.4
+        },
+        {
+          "from": "CAD",
+          "to": "UAH",
+          "rate": 4.1
+        },
+        {
+          "from": "AED",
+          "to": "CAD",
+          "rate": 2.7
+        }
+      ],
+      "from": "USD",
+      "to": "AED",
+      "amount": 3
+    },
+    "expected": {
+      "value": 9.72,
+      "currency": "AED"
+    }
+  }
+]
